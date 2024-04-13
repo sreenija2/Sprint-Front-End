@@ -1,0 +1,18 @@
+<table class="table table-bordered">
+    <tr *ngIf = "phygoldtran.length > 0">
+        <th>Transaction ID</th>
+        <th>Quantity</th>
+        <th>Address ID</th>
+        <th>Branch ID</th>
+        <th>User ID</th>
+        <th>Created At</th>
+    </tr>
+    <tr *ngFor="let phy of phygoldtran">
+        <td>{{phy.transactionid}}</td>
+        <td>{{phy.user.userId}}</td>
+        <td>{{phy.branch.branchid}}</td>
+        <td>{{phy.quantity}}</td>
+        <td>{{phy.address2.addressId}}</td>
+        <td>{{phy.createdAt}}</td>
+    </tr>
+</table>
